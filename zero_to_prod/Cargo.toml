@@ -1,0 +1,20 @@
+[package]
+name = "zero_to_prod"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+path = "src/lib.rs"
+
+
+[[bin]]
+path = "src/main.rs"
+name = "zero2prod"
+
+
+[dependencies]
+actix-web = "4.8.0"
+reqwest = "0.12.5"
+uuid = { version = "1.10.0", features = ["fast-rng"] }
+
+
