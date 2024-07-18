@@ -1,0 +1,6 @@
+[env]
+
+RUST_LOG="web_app=debug"
+
+
+SERVICE_WEB_FOLDER="web-folder/"

@@ -1,0 +1,25 @@
+[package]
+name = "web_app"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+lib-utils = { path = "./crates/libs/lib-utils"}
+lib-core = { path = "./crates/libs/lib-core"}
+anyhow = "1.0.86"
+async-trait = "0.1.81"
+axum = "0.7.5"
+httpc-test = "0.1.9"
+lazy-regex = "3.1.0"
+reqwest = { version = "0.12.5", features = ["cookies", "json"] }
+serde = { version = "1.0.204", features = ["derive"] }
+serde_json = "1.0.120"
+serde_with = "3.9.0"
+strum_macros = "0.26.4"
+tokio = { version = "1.38.0", features = ["full"] }
+tower-cookies = "0.10.0"
+tower-http = { version = "0.5.2", features = ["fs"] }
+tracing = "0.1.40"
+tracing-subscriber = { version = "0.3.18", features = ["env-filter"] }
+uuid = { version = "1.10.0", features = ["fast-rng", "v4"] }
+derive_more = { version = "0.99.18", features = ["display", "from"] }
