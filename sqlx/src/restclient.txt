@@ -1,0 +1,14 @@
+# -*- restclient -*-
+
+
+GET http://localhost:4000/
+
+GET http://localhost:4000/get-all
+
+GET http://localhost:4000/get/4
+
+POST http://localhost:4000/create
+
+PATCH http://localhost:4000/patch
+
+DELETE http://localhost:4000/delete
