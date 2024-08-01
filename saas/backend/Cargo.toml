@@ -1,0 +1,38 @@
+
+[package]
+name = "my-app"
+version = "0.1.0"
+edition = "2021"
+publish = false
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+# work with Stripe https://www.payments.rs/
+async-stripe = { version = "0.21.0", features = ["runtime-tokio-hyper"] }
+# axum web framework https://github.com/tokio-rs/axum/
+axum = "0.6.15"
+axum-extra = { version = "0.7.3", features = ["cookie-private"] }
+# password hashing for authentication purposes https://github.com/Keats/rust-bcrypt
+bcrypt = "0.14.0"
+# required for setting up CORS layer https://github.com/hyperium/http
+http = "0.2.9"
+# random generation - good for random password resets https://github.com/rust-random/rand
+rand = "0.8.5"
+# make POST requests to external services https://github.com/seanmonstar/reqwest
+reqwest = "0.11.16"
+# deserialize and serialize to/from JSON format https://github.com/serde-rs/serde
+serde = { version = "1.0.160", features = ["derive"] }
+# shuttle deps https://www.shuttle.rs/
+shuttle-axum = "0.14.0"
+shuttle-runtime = "0.14.0"
+shuttle-secrets = "0.14.0"
+shuttle-shared-db = { version = "0.14.0", features = ["postgres"] }
+shuttle-static-folder = "0.14.0"
+tokio = "1.27.0"
+# interact with SQL databases https://github.com/launchbadge/sqlx
+sqlx = { version = "0.6.3", features = ["runtime-tokio-native-tls", "postgres"] }
+# required for setting up cookies https://github.com/time-rs/time
+time = "0.3.20"
+# required to get static files working with axum https://github.com/tower-rs/tower
+tower = "0.4.13"
+tower-http = { version = "0.4.0", features = ["cors", "fs"] }
