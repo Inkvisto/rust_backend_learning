@@ -22,3 +22,9 @@
 
 ### Advanced implementation
 
+1. Refactoring Model, Config, Shared Implementation.
+
+2. Libs for auth,pwd,etc.
+
+3. JSON-RPC implementation.
+

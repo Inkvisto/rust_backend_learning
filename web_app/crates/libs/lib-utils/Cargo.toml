@@ -6,5 +6,9 @@ edition = "2021"
 [lib]
 doctest = false
 
+[lints]
+workspace = true
 
 [dependencies]
+base64 = "0.22"
+time = { workspace = true }
