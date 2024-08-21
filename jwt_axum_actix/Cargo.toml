@@ -1,0 +1,16 @@
+[package]
+name = "jwt_axum_actix"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+
+[workspace]
+
+members = [
+  "axum-auth",
+  "actix-auth"
+, "jwt-lib"]
+
+resolver = "2"
